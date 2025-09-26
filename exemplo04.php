@@ -1,10 +1,10 @@
 <?php
 if (isset($_GET['nome']) && isset($_GET['idade'])) {
-    $nome = htmlspecialchars($_GET['nome']);
-    $idade = (int) $_GET['idade'];
+    $nome = $_GET['nome'];
+    $idade =  $_GET['idade'];
 
-    echo "Nome: " . $nome . "<br>";
-    echo "Idade: " . $idade . " anos";
+    echo "Dados recebidos via GET <br>";
+
 } else {
     echo "Por favor, preencha o formulário.";
 }
